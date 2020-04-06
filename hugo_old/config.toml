@@ -56,7 +56,7 @@ languageCode = "en-us"
 
 [params]
 
-  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+  googleTagManagerID = "GTM-54P42HW" # Google Analytics works with Google Tag Manager
 
   [params.logo]
     text1 = "Andreas"

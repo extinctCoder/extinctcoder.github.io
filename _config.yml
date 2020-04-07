@@ -1,7 +1,7 @@
 #Update all the sections by editing the data.yml file inside _data folder.
 
 # Site Settings
-title: RESUME
+title: RESUME | dathVader
 url: "https://extinctCoder.github.io"
 baseurl: "" #change it according to your repository name
 description: extinctCoder
@@ -28,5 +28,5 @@ compress_html: # - http://jch.penibelst.de/
 
 # Development Settings
 port: 4000
-host: 0.0.0.0
+host: 127.0.0.1
 safe: false

@@ -1,0 +1,12 @@
+---
+layout: resume
+---
+
+{% include _resume/career-profile.html %} 
+{% unless site.data.education_experiences.enable_sidebar %} 
+    {% include _resume/education.html %} 
+{% endunless %} 
+{% include _resume/experiences.html %} 
+{% include _resume/projects.html %}
+{% include _resume/publications.html %} 
+{% include _resume/skills.html %}

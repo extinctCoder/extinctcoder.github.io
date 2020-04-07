@@ -2,30 +2,34 @@
 <div class="contact-container container-block">
   <ul class="list-unstyled contact-list">
     {% if social_links.phone %}
-    <li class="phone">
-      <a href="tel:{{ social_links.phone }}">{{ social_links.phone }}</a>
-    </li>
+      {% for phn in social_links.phone %}
+        <li class="phone">
+          <a href="tel:{{ phn.number }}">{{ phn.number }}</a>
+        </li>
+      {% endfor %}
     {% endif %}
     {% if social_links.email %}
-    <li class="email">
-      <a href="mailto:{{ social_links.email }}">{{ social_links.email }}</a>
-    </li>
+      {% for mil in social_links.email %}
+        <li class="email">
+          <a href="mailto:{{ mil.mail }}">{{ mil.mail }}</a>
+        </li>
+      {% endfor %}
     {% endif %}
     <li class="align-items-center">
       {% if social_links.website %}
-        <a class="website" href="http://{{ social_links.website }}" target="_blank"><i class="fas fa-globe-americas"></i></a>
+        <a class="website" href="https://{{ social_links.website }}" target="_blank"><i class="fas fa-globe-americas"></i></a>
       {% endif %}
       {% if social_links.linkedin %}
-        <a class="linkedin" href="https://linkedin.com/in/{{ social_links.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="linkedin" href="https://bd.linkedin.com/in/{{ social_links.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
       {% endif %}
       {% if social_links.github %}
-        <a class="github" href="http://github.com/{{ social_links.github }}" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="github" href="https://github.com/{{ social_links.github }}" target="_blank"><i class="fab fa-github"></i></a>
       {% endif %}
       {% if social_links.gitlab %}
-        <a class="gitlab" href="http://gitlab.com/{{ social_links.gitlab }}" target="_blank"><i class="fab fa-gitlab"></i></a>
+        <a class="gitlab" href="https://gitlab.com/{{ social_links.gitlab }}" target="_blank"><i class="fab fa-gitlab"></i></a>
       {% endif %}
       {% if social_links.bitbucket %}
-        <a class="bitbucket" href="http://bitbucket.com/{{ social_links.bitbucket }}" target="_blank"><i class="fab fa-bitbucket"></i></a>
+        <a class="bitbucket" href="https://bitbucket.com/{{ social_links.bitbucket }}" target="_blank"><i class="fab fa-bitbucket"></i></a>
       {% endif %}
       {% if social_links.twitter %}
         <a class="twitter" href="https://twitter.com/{{ social_links.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>

@@ -1,10 +1,10 @@
 social_links:
   enable: true
   data:
-    email: extinctCoder@outlook.com
+    email: 
+      - mail: extinctCoder@outlook.com
     phone: 
-      - +880 1737 475 212
-      - +880 1617 475 212
+      - number: +880 1737 475 212
     website: extinctCode.github.io
     linkedin: extinctCoder
     github: extinctCoder

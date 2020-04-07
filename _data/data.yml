@@ -19,7 +19,7 @@ sidebar:
   github: extinctCoder
   gitlab: extinctCoder
   bitbucket: extinctCoder
-  twitter: "@extinctCoder"
+  twitter: "extinctCoder"
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
@@ -47,12 +47,7 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Aiming a challenging and nation contributing position related to Software and Hardware related fields. Able to work on own initiative, creativity and as part of a team with proven leadership skills involving managing, developing and motivating teams to achieve their objectives.
 education:
   - degree: MSc in Computer Science
     university: University of London
@@ -77,32 +72,25 @@ education:
         - Bullet point
         - Bullet point
 experiences:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+  - role: Software & Interface Specialist
+    time: 2017 - 2016
+    company: AIUB Robotic Crew
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
+      The University Rover Challenge (URC) is the world's premier robotics competition for college students. Held annually in the desert of southern Utah in the United States, URC challenges student teams to design and build the next generation of Mars rovers that will one-day work alongside astronauts exploring the Red Planet. URC was launched in 2006, with competitions being held every summer since 2007. URC consistently draws an international field of the most talented and promising students around.
+  - role: Senior Graphics Designer
+    time: 2016 - 2015
+    company: AIUB Community of Engineering students (ACES)
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      The mission of the ACES targets four main areas:
+        - working to increase engineering awareness through its programs and events
+        - fostering the professional advancement of all engineering students
+        - improving the quality of life of disadvantaged communities through implementation of environmentally and economically sustainable engineering projects
+        - creating transformation experiences and responsible leaders
+  - role: Contributor
+    time: TILL 2016
+    company: Mozilla Community Bangladesh
+    details: |
+      Mozilla community is an open source community works to ensure general users’ privacy and protection in browsing internet.
   - role: UI Developer
     time: 2012 - 2014
     company: Amazon, London
@@ -186,4 +174,4 @@ skills:
       level: 60%
 
 footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  Prepaired with <i class="fas fa-heart"></i> by <a href="https://www.github.com/extinctCoder" target="_blank" rel="nofollow">darthVader</a>

@@ -1,4 +1,4 @@
-enable_sidebar: false
+enable_sidebar: true
 data:
   - degree: Bachelor of Computer Science & Engineering (BSC in CSE)
     degree_short: BSC in CSE

@@ -9,7 +9,10 @@
         "goodreads",
         "linkedin",
         "markdownify",
+        "nofollow",
         "saidpur",
-        "sgtc"
+        "sgtc",
+        "skillset",
+        "toolset"
     ]
 }

@@ -1,5 +1,5 @@
-{% assign experiences = site.data.data.experiences %}
-{% if experiences %}
+{% assign experiences = site.data.job_experiences.data %}
+{% if site.data.job_experiences.enable %}
 <section class="section experiences-section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
@@ -17,21 +17,19 @@
       <div class="upper-row">
         <h3 class="job-title">{{ experience.role }}</h3>
         <div class="time">{{ experience.time }}</div>
-      </div><!--//upper-row-->
-
-      <div class="company">{{ experience.company }}</div>
-
-    </div><!--//meta-->
+      </div>
+      <a class="company" href="{{ experience.link }}" target="_blank">{{ experience.company }}</a>
+    </div>
 
     {% if experience.details %}
     <div class="details">
       {{ experience.details | markdownify }}
-    </div><!--//details-->
+    </div>
     {% endif %}
 
-  </div><!--//item-->
+  </div>
   {% endfor %}
 
-</section><!--//section-->
+</section>
 {% endif %}
 

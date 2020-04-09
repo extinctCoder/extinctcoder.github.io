@@ -6,7 +6,6 @@ name:
   nick_name: extinctCoder
   tagline: Robotics Engineer
   avatar: profile_2.png
-
 languages_info:
   enable_view: true
   data:
@@ -16,25 +15,19 @@ languages_info:
       level: Native
     - idiom: Hindi
       level: Moderate
-
 interests:
   enable_view: true
   data:
     - item: Programing
       link:
-
     - item: Soldering
       link:
-
     - item: Video Games
       link:
-
-career-profile:
+career_profile:
+  enable_view: true
   title: Objective
   summary: |-
     Aiming a challenging and nation contributing position related to Software and Hardware related fields. Able to work on own initiative, creativity and as part of a team with proven leadership skills involving managing, developing and motivating teams to achieve their objectives.
-
-
-
 footer: >
   Prepared with <i class="fas fa-heart"></i> by <a href="https://www.github.com/extinctCoder" target="_blank" rel="nofollow">darthVader</a>.

@@ -1,4 +1,4 @@
-{% assign data = site.data.publications_list %}
+{% assign data = site.data.references_list %}
 {% if data.enable %}
 <section class="section publications-section">
 
@@ -19,12 +19,12 @@
   {% for item in data.data %}
   <div class="item">
     {% if item.link %}
-      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+      <li><a href="{{ item.link }}">{{ item.name }}, {{ item.position }}</a></li>
     {% else %}
-      <li>{{ item.title }}</li>
+      <li>{{ item.name }}, {{ item.position }}</li>
     {% endif %}
-    <div class="publication-authors">{{ item.authors }}</div>
-    <div class="publication-conference">{{ item.conference }}</div>
+    <div class="publication-authors">{{ item.department }}</div>
+    <div class="publication-conference">{{ item.institute }}</div>
   </div>
   {% endfor %}
 

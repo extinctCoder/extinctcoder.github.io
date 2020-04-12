@@ -1,0 +1,10 @@
+enable: true
+title: Publications
+enable_intro: false
+intro: |-
+  bellow here is all my of my publications
+data:
+  - title: The Art of Computer Programming
+    link: #
+    authors: Donald E. Knuth
+    conference: Addison-Wesley, 1968

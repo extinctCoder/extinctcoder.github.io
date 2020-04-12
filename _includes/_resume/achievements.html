@@ -1,4 +1,4 @@
-{% assign data = site.data.publications_list %}
+{% assign data = site.data.achievements_list %}
 {% if data.enable %}
 <section class="section publications-section">
 
@@ -23,8 +23,8 @@
     {% else %}
       <li>{{ item.title }}</li>
     {% endif %}
-    <div class="publication-authors">{{ item.authors }}</div>
-    <div class="publication-conference">{{ item.conference }}</div>
+    <div class="publication-authors">Position : {{ item.position }}</div>
+    <div class="publication-conference">Organized By : {{ item.organized_by }}</div>
   </div>
   {% endfor %}
 

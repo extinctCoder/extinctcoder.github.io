@@ -1,11 +1,9 @@
 {% assign interests = site.data.personal_info.interests %}
 {% if interests.enable_view %}
 <div class="interests-container container-block">
-
   <h2 class="container-block-title">
     Interests
   </h2>
-
   <ul class="list-unstyled interests-list">
     {% for interest in interests.data %}
       {% if interest.link %}

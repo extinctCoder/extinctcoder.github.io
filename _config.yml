@@ -1,0 +1,46 @@
+### Site Settings ###
+title: darthVader | extinctCoder
+description: |-
+  sabbir ahmed shourov 's personal website
+baseurl: "" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository: extinctCoder/extinctCoder.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+# remote_theme: YoussefRaafatNasry/portfolYOU
+
+plugins:
+  - jemoji
+
+nav_exclude: # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - documentation/partials/** # For Documentation Only
+
+permalink: /blog/:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements: # For Documentation Only
+    output: false # For Documentation Only
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope: # For Documentation Only
+      path: "" # For Documentation Only
+      type: "elements" # For Documentation Only
+    values: # For Documentation Only
+      layout: "element" # For Documentation Only
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

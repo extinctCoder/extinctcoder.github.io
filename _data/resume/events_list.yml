@@ -1,0 +1,10 @@
+enable: true
+title: Events
+enable_intro: false
+intro: |-
+  bellow here is all my events i have been attended
+data:
+  - title: Firefox Quantum Sprint
+    link: https://firefoxsprint.mozilla.community/leaderboard
+    type: Software Quality Testing
+    organized_by: AIUB Firefox Community

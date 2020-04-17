@@ -1,0 +1,67 @@
+title: Projects
+enable: true
+intro: |-
+  Bellow here some of mine projects that i have been complied.
+assignments:
+  - title: ARC_EYE
+    link: "https://www.github.com/extinctCoder"
+    tagline: Rover Control & Data Visualization System for the arc-2017 team
+    technology : 
+      title: Technology
+      data:
+        - C# WPF
+        - Python
+        - Arduino
+        - Raspberry Pi
+        - Open CV
+        - Socket
+        - Client Programming
+        - Py - Firmata
+  - title: ARC_EYE_V2
+    link: "https://www.github.com/extinctCoder"
+    tagline: Rover Data Visualization Software for arc – 2018
+    technology:
+      title: Technology
+      data:
+        - C# WPF
+        - WPF Data Visualization tools
+        - Python
+        - MQTT
+        - XD Messaging 
+        - Raspberry Pi
+  - title: Tunnel Controller
+    link: "https://www.github.com/extinctCoder"
+    tagline: This project can help to manage the tunnels automatically & efficiently. It can detect the problem and also notify the administrator about the issue
+    technology:
+      title: Technology
+      data:
+        - C# WPF
+        - Arduino
+        - Raspberry Pi
+        - My SQL
+        - PHP
+        - Python
+  - title: Robotics Projects
+    link: "https://www.github.com/extinctCoder"
+    tagline: Various types of robots or arduino projects are also implanted and tested
+    technology:
+      title: Technology
+      data:
+        - Arduino
+        - Raspberry Pi
+  - title: IoT Projects
+    link: "https://www.github.com/extinctCoder"
+    tagline: I have also implemented some IoT projects also. This can be implemented in real life with a few modifications
+    technology:
+      title: Technology
+      data:
+        - Arduino
+        - Raspberry Pi
+  - title: Industry Controller
+    link: "https://www.github.com/extinctCoder"
+    tagline: In this project I have made a Control Panel which can control the electrical instruments of an industry also measure the any abnormal situations like smoke, fire, short-circuit
+    technology:
+      title: Technology
+      data:
+        - Arduino
+        - Raspberry Pi

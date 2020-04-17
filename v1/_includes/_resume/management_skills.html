@@ -1,0 +1,34 @@
+{% assign skill_set = site.data.skills_info.management_skills %}
+{% if skill_set.enable_sidebar %}
+<div class="interests-container container-block">
+  <h2 class="container-block-title">
+    {{ skill_set.title }}
+  </h2>
+  <ul class="list-unstyled interests-list">
+    {% for skill in skill_set.toolset %}
+        <li>{{ skill.name }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% else %}  
+  <section class="skills-section section">
+    <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+      </span>
+      {{ skill_set.title }}
+    </h2>
+    <div class="skillset">
+      {% for skill in skill_set.toolset %}
+      <div class="item">
+        <h3 class="level-title">{{ skill.name }}</h3>
+        <div class="level-bar">
+          <div class="level-bar-inner" data-level="{{ skill.level }}">
+          </div> 
+        </div>
+      </div> 
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

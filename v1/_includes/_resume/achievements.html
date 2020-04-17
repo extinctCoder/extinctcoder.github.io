@@ -1,0 +1,32 @@
+{% assign data = site.data.achievements_list %}
+{% if data.enable %}
+<section class="section publications-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ data.title }}
+  </h2>
+
+  {% if data.enable_intro %}
+  <div class="intro">
+    {{ data.intro | markdownify }}
+  </div>
+  {% endif %}
+
+  {% for item in data.data %}
+  <div class="item">
+    {% if item.link %}
+      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+    {% else %}
+      <li>{{ item.title }}</li>
+    {% endif %}
+    <div class="publication-authors">Position : {{ item.position }}</div>
+    <div class="publication-conference">Organized By : {{ item.organized_by }}</div>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

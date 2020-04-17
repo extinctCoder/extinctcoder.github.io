@@ -1,0 +1,63 @@
+{{ if .Site.Data.showcase.enable }}
+<section
+  class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down"
+>
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="{{ .Site.Data.showcase.image.x | absURL }}"
+      data-srcset="{{ .Site.Data.showcase.image.x | absURL }} 1x, {{ .Site.Data.showcase.image._2x | absURL }} 2x"
+      alt="showcase keyboard and mouse image"
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          {{ .Site.Data.showcase.title }}
+          <br />
+          <span>{{ .Site.Data.showcase.subtitle }}</span>
+        </h1>
+        <p class="lead">
+          {{ .Site.Data.showcase.description | safeHTML }}
+        </p>
+        {{ if .Site.Data.showcase.button_view_resume.enable }}
+        <a
+          href="{{ .Site.Data.showcase.button_view_resume.URL | absURL }}"
+          class="btn btn-secondary"
+        >
+          <i class="{{ .Site.Data.showcase.button_view_resume.icon }}"></i>
+          {{ .Site.Data.showcase.button_view_resume.btnText }}
+        </a>
+        {{ end }} {{ if .Site.Data.showcase.button_download_resume.enable }}
+        <a
+          href="{{ .Site.Data.showcase.button_download_resume.URL | absURL }}"
+          class="btn btn-primary"
+        >
+          <i class="{{ .Site.Data.showcase.button_download_resume.icon }}"></i>
+          {{ .Site.Data.showcase.button_download_resume.btnText }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        {{ range .Site.Data.showcase.social_links }}
+        <a href="{{ .URL | absURL }}" target="_blank"
+          ><i class="icon-{{ .icon }}-line"></i
+        ></a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="{{ .Site.Data.showcase.image_mobile.x | absURL }}"
+      alt="showcase keyboard and mouse image"
+    />
+  </div>
+</section>
+{{ end }}

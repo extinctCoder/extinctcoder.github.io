@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% include _resume/career-profile.html %} 
+{% include _resume/experiences.html %} 
+{% unless site.data.education_experiences.enable_sidebar %} 
+    {% include _resume/education.html %} 
+{% endunless %} 
+{% unless site.data.skills_info.engineering_skills.enable_sidebar %} 
+    {% include _resume/engineering_skills.html %} 
+{% endunless %} 
+{% unless site.data.skills_info.language_skills.enable_sidebar %} 
+    {% include _resume/language_skills.html %} 
+{% endunless %} 
+{% unless site.data.skills_info.framework_skills.enable_sidebar %} 
+    {% include _resume/framework_skills.html %} 
+{% endunless %} 
+{% unless site.data.skills_info.management_skills.enable_sidebar %} 
+    {% include _resume/management_skills.html %} 
+{% endunless %} 
+{% include _resume/publications.html %}
+{% include _resume/achievements.html %}
+{% include _resume/projects.html %}
+{% include _resume/events.html %}
+{% include _resume/references.html %}

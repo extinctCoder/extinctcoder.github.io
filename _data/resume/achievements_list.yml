@@ -1,0 +1,14 @@
+enable: true
+title: Achievements
+enable_intro: false
+intro: |-
+  bellow here is all my achievements
+data:
+  - title: University Rover Challenge – 2017, USA
+    link: http://urc.marssociety.org/home/about-urc/urc2017-scores
+    position: 32th
+    organized_by: Mars Society, NASA (USA)
+  - title: Desktop App Showcasing, AIUB
+    link: #
+    position: 1st
+    organized_by: AIUB Computer Club in CS FEST - 2017, AIUB

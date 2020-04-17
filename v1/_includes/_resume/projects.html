@@ -1,0 +1,40 @@
+{% assign projects = site.data.projects_info %}
+{% if projects.enable %}
+  <section class="section projects-section">
+    <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+      </span>
+      {{ projects.title }}
+    </h2>
+    {% if projects.intro %}
+    <div class="intro">
+        <p>{{ projects.intro }}</p>
+    </div>
+    {% endif %}
+    {% for project in projects.assignments %}
+      <div class="item">
+        <span class="project-title">
+          {% if project.link %}
+          <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+          {% else %}
+          {{ project.title }}
+          {% endif %}
+        </span>
+        {% if project.tagline %}
+        - <span class="project-tagline">{{ project.tagline }}</span>
+        {% endif %}<br>
+        <span class="project-tagline">
+          {% if project.technology %}
+          <span class="project-tagline">{{ project.technology.title }} :</span>
+          {% for tech in project.technology.data %}
+          - <span class="project-tagline">{{ tech }}</span>
+          {% endfor %}
+          <span class="project-tagline"> etc.</span>
+        {% endif %}
+        </span>
+      </div>
+    {% endfor %}
+  </section>
+{% endif %}

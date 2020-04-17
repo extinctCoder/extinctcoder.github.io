@@ -1,0 +1,37 @@
+{% assign data = site.data.personal_info.name %}
+<div class="sidebar-wrapper">
+  <div class="profile-container">
+    {% if data.enable_view %}
+      <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ data.avatar }}" alt="profile picture" />
+    {% endif %}
+    {% if data.enable_view %}
+      <h1 class="name">{{ data.last_name }}, {{ data.first_name }} {{ data.middle_name }}</h1>
+    {% endif %}
+    {% if data.enable_view %}
+      <h3 class="tagline">{{ data.tagline }}</h3>
+    {% endif %}
+    {% if site.data.contact_info.social_links.enable %}
+      {% include _resume/contact.html %}
+    {% endif %}
+  </div>
+  {% if site.data.skills_info.engineering_skills.enable_sidebar %} 
+    {% include _resume/engineering_skills.html %} 
+  {% endif %} 
+  {% if site.data.skills_info.language_skills.enable_sidebar %} 
+      {% include _resume/language_skills.html %} 
+  {% endif %} 
+  {% if site.data.skills_info.framework_skills.enable_sidebar %} 
+      {% include _resume/framework_skills.html %} 
+  {% endif %} 
+  {% if site.data.skills_info.management_skills.enable_sidebar %} 
+      {% include _resume/management_skills.html %} 
+  {% endif %} 
+  {% if site.data.education_experiences.enable_sidebar %}
+    {% include _resume/education.html %}
+  {% endif %}
+  {% include _resume/language.html %}
+  {% include _resume/interests.html %}
+  {% if sidebar.about %}
+    {% include about.html %}
+  {% endif %}
+</div>

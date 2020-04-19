@@ -1,4 +1,6 @@
 language: ruby
+os: linux
+dist: xenial
 rvm:
   - 2.4.0
 
@@ -34,7 +36,7 @@ after_success:
   - chmod +x _scripts/deploy.sh
   - _scripts/deploy.sh
 
-sudo: false
+root: false
 addons:
   apt:
     packages:

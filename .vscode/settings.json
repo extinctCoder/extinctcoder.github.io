@@ -10,16 +10,26 @@
         "Tabin",
         "Zahir",
         "bangla",
+        "bottomleft",
+        "bottomright",
         "codewars",
+        "dribbble",
         "endunless",
+        "flickr",
         "gitlab",
         "goodreads",
+        "googleplus",
         "linkedin",
         "markdownify",
         "nofollow",
+        "pinterest",
+        "sacnite",
         "saidpur",
         "sgtc",
         "skillset",
-        "toolset"
+        "toolset",
+        "topleft",
+        "topright",
+        "youtube"
     ]
 }

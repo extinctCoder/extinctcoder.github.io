@@ -1,5 +1,5 @@
 # Awesome-CV Second Assignment
-[View Site](https://moya10.github.io/awesome-cv/)
+[View Site](https://moya10.github.io/awesome-cv/) Build Status : [![Build Status](https://travis-ci.com/extinctCoder/extinctCoder.github.io.svg?branch=master)](https://travis-ci.com/extinctCoder/extinctCoder.github.io)
 
 ## Installation & setup guide
 This template is designed to be hosted using GitHub pages and so that's what these instructions will cover. If you plan on hosting it seperately then there might be some extra steps that we wont cover.

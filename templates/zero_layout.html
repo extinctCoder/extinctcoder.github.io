@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="extinctCoder"/>
+        <meta name="details" content="personal website for hosting resume"/>
+        {% include 'global_sections/css_includes.html' %}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>darthVader | extinctCoder</title>
+    </head>
+    <body class="stretched">
+        <div id="wrapper" class="clearfix">
+            {% block zero_header_up %}{% endblock %}
+            {% include 'global_sections/header.html' %}
+            <section id="content">
+                {% block zero_body %}{% endblock %}    
+            </section>
+            {% include 'global_sections/footer.html' %}
+        </div>
+        <div id="gotoTop" class="icon-angle-up"></div>
+        {% include 'global_sections/js_includes.html' %}
+        {% block zero_js %}{% endblock %}
+    </body>
+</html>

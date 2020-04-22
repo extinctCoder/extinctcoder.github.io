@@ -1,0 +1,14 @@
+{% extends "zero_layout.html" %}
+{% block zero_header_up %}
+    {% include 'concept_home/starting_parallax.html' %}
+{% endblock %}
+{% block zero_body %}
+    <div class="content-wrap nopadding">
+        {% include 'concept_home/onload_subscribe.html' %}
+        {% include 'concept_home/four_points.html' %}
+        {% include 'concept_home/seriously_parallaxical.html' %}
+        {% include 'concept_home/features.html' %}
+        {% include 'concept_home/not_compleated.html' %}
+    </div>
+{% endblock %}
+{% block page_js %}{% endblock %}

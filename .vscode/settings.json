@@ -1,0 +1,14 @@
+{
+    "python.pythonPath": "django_env/bin/python3",
+    "cSpell.words": [
+        "sqlite"
+    ],
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder}/db.sqlite3",
+            "dialect": "SQLite",
+            "name": "project_blank"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

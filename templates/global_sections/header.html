@@ -1,0 +1,26 @@
+{% load static %}
+<header id="header" class="transparent-header">
+	<div id="header-wrap">
+		<div class="container clearfix">
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+			<div id="logo">
+				<a href="{% url 'concepthome:index' %}" class="standard-logo" data-dark-logo="{% static 'images/logo-dark.png' %}"><img src="{% static 'images/logo.png' %}" alt="Canvas Logo"></a>
+				<a href="{% url 'concepthome:index' %}" class="retina-logo" data-dark-logo="{% static 'images/logo-dark@2x.png' %}"><img src="{% static 'images/logo@2x.png' %}" alt="Canvas Logo"></a>
+			</div>
+			<nav id="primary-menu">
+				<ul>
+					<li class="current"><a href="{% url 'concepthome:projects' %}"><div>Projects</div></a></li>
+					<li><a href="{% url 'concepthome:blog' %}"><div>Blog</div></a></li>
+					<li><a href="{% url 'concepthome:about_me' %}"><div>About Me</div></a></li>
+				</ul>
+				<div id="top-search">
+					<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+					<form action="search.html" method="get">
+						<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+					</form>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<div class="clear"></div>

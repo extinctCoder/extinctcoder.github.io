@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 def index(request):
     my_dict = {"content": "I am from index"}
-    return render(request, 'concept_home/concept_home.html', context=my_dict)
+    return render(request, 'concepthome/concepthome.html', context=my_dict)
 
 
 def blog(request):

@@ -10,15 +10,9 @@
     </head>
     <body class="stretched">
         <div id="wrapper" class="clearfix">
-            {% block zero_header_up %}{% endblock %}
-            {% include 'global_sections/header.html' %}
-            <section id="content">
-                {% block zero_body %}{% endblock %}    
-            </section>
-            {% include 'global_sections/footer.html' %}
+            {% block zero_body %}{% endblock %}    
+            {% include 'global_sections/js_includes.html' %}
+            {% block zero_js %}{% endblock %}
         </div>
-        <div id="gotoTop" class="icon-angle-up"></div>
-        {% include 'global_sections/js_includes.html' %}
-        {% block zero_js %}{% endblock %}
     </body>
 </html>

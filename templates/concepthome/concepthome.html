@@ -1,8 +1,8 @@
-{% extends "zero_layout.html" %}
-{% block zero_header_up %}
+{% extends "layout_page.html" %}
+{% block page_header_up %}
     {% include 'concepthome/starting_parallax.html' %}
 {% endblock %}
-{% block zero_body %}
+{% block page_body %}
     <div class="content-wrap nopadding">
         {% include 'concepthome/onload_subscribe.html' %}
         {% include 'concepthome/four_points.html' %}
@@ -11,4 +11,3 @@
         {% include 'concepthome/not_compleated.html' %}
     </div>
 {% endblock %}
-{% block page_js %}{% endblock %}

@@ -1,4 +1,6 @@
 {% extends "template_common.html" %}
+{% load static %}
+
 {% block common_body %}
     <div class="container clearfix">
 
@@ -6,7 +8,7 @@
 
 						<div class="col-md-9">
 
-							<img src="images/icons/avatar.jpg" class="alignleft img-circle img-thumbnail notopmargin nobottommargin" alt="Avatar" style="max-width: 84px;">
+							<img src="{% static 'images/icons/avatar.jpg' %}" class="alignleft img-circle img-thumbnail notopmargin nobottommargin" alt="Avatar" style="max-width: 84px;">
 
 							<div class="heading-block noborder">
 								<h3>SemiColonWeb</h3>
@@ -26,6 +28,7 @@
 											<li><a href="#tab-posts"><i class="icon-pencil2"></i> Posts</a></li>
 											<li><a href="#tab-replies"><i class="icon-reply"></i> Replies</a></li>
 											<li><a href="#tab-connections"><i class="icon-users"></i> Connections</a></li>
+											<li><a href="#tab-homepage"><i class="icon-home"></i> Homepage</a></li>
 										</ul>
 
 										<div class="tab-container">
@@ -336,6 +339,12 @@
 												</div>
 
 											</div>
+											<div class="tab-content clearfix" id="tab-homepage">
+
+												{% include 'dashboard/edit/concepthome.html' %}
+
+											</div>
+
 
 										</div>
 

@@ -1,0 +1,1 @@
+take a look at django-guardian at https://github.com/django-guardian/django-guardian

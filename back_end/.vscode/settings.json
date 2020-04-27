@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "python_env/bin/python3.7",
+    "cSpell.words": [
+        "sqlite"
+    ]
+}
